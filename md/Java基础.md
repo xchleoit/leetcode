@@ -36,3 +36,11 @@ HashMap是一种基于数组链表的结合类，以key-value的形式表达。�
 
 # 3 .多线程
 
+	## 1.  使用无界队列的线程池会导致内存飙升吗？
+
+* FixedThreadPool是一个无界队列的线程池,LinkedBlockQueue的最大任务数量为Integer.MAX_VALUE</br>
+
+* 所以。<font color=red>如果WorkQueue里不断的积压越来越多的任务，不停的增加。这个过程会导致机器的内存使用飙升，最后也许极端的情况下导致JVM OOM，系统挂掉了</font>
+
+  
+
