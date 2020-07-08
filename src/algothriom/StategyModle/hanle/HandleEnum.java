@@ -6,7 +6,6 @@ public enum HandleEnum {
     HANDLE_ENUM3(3,"3"),
     HANDLE_ENUM4(4,"4");
 
-
     private int type;
     private String value;
 
@@ -21,6 +20,8 @@ public enum HandleEnum {
     public String value(){
         return value;
     }
+
+
 
     public static HandleEnum valueOf(int type){
         for (HandleEnum handleEnum : HandleEnum.values()){
