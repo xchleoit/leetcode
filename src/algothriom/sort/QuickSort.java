@@ -15,7 +15,6 @@ public class QuickSort {
         System.out.println("排序后:");
         Arrays.asList(arr).forEach((item)->{System.out.print(item+"，");});
         System.out.println();
-        Arrays.asList(arr).forEach(System.out::print);
     }
 
     private static void quickSort(Integer[] arr, int i, int i1) {
